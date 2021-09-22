@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Mateus Oliveira de Souza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="imagex/png" href="images/zapt-logo.png">
+    <title>Zapt Viagens - Agência de Viagens</title>
+    <meta name="description" content="Website Zapt Viagens desenvolvido para o processo seletivo da Rocky"/>
+</head>
+<body>  
+    <header>
+        <h2>Zapt Viagens</h2>
+        <nav>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="vantagens.html">Vantagens</a></li>
+            <li><a href="servicos.html">Destinos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </nav>
+    </header>
+
+    <section class="banner-area">
+        <img src="" alt="Imagem com principais destinos pelo mundo" class="banner-img">
+        <h1 id="banner-h1">Zapt Viagens</h1>
+        <h3>Venha viajar conosco!</h3>
+        <a href="contato.html" class="banner-btn">Entrar em contato</a>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 Zapt Viagens - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+		function typeWriter(elemento){
+			const textoArray = elemento.innerHTML.split('');
+			elemento.innerHTML = ''
+			textoArray.forEach((letra, i) =>{
+				setTimeout(function(){
+					elemento.innerHTML += letra;
+				}, 75*i)
+			});
+		}
+		const titulo = document.querySelector('h1');
+		typeWriter(titulo);
+	</script>
+
+</body>
+</html>
